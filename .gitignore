@@ -16,3 +16,8 @@ EXPLICATION_MINIMAX.md
 
 *.pickle
 *.pkl
+chatgpt_json/
+"extraction de donner/"
+dataset/
+*.jsonl
+AUDIT_SUMMARY.md
