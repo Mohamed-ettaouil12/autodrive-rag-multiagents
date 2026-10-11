@@ -1,0 +1,15 @@
+ollama
+chromadb
+sentence-transformers
+langgraph
+langchain
+tqdm
+neo4j
+python-dotenv
+rank-bm25
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+streamlit
+requests

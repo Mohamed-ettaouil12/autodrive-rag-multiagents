@@ -1,0 +1,13 @@
+{
+  "tokenizer": "approximation par mots (tiktoken indisponible)",
+  "documents_source": 20,
+  "chunks_total": 300,
+  "par_type": {
+    "faq": {
+      "chunks": 300,
+      "tokens_moyen": 28.5,
+      "tokens_total": 8560
+    }
+  },
+  "fichier_sortie": "output/chunks_faq.jsonl"
+}

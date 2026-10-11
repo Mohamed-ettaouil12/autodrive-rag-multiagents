@@ -1,0 +1,28 @@
+{
+  "tokenizer": "approximation par mots (tiktoken indisponible)",
+  "documents_source": 240,
+  "chunks_total": 2400,
+  "par_type": {
+    "fiche_technique": {
+      "chunks": 240,
+      "tokens_moyen": 101.1,
+      "tokens_total": 24270
+    },
+    "maintenance": {
+      "chunks": 240,
+      "tokens_moyen": 101.0,
+      "tokens_total": 24240
+    },
+    "assurance": {
+      "chunks": 240,
+      "tokens_moyen": 71.0,
+      "tokens_total": 17040
+    },
+    "faq": {
+      "chunks": 1680,
+      "tokens_moyen": 21.5,
+      "tokens_total": 36147
+    }
+  },
+  "fichier_sortie": "output/chunks_vehicules.jsonl"
+}

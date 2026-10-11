@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "project_name": "AutoDrive Maroc",
+    "fleet_size_total": 180,
+    "is_fictional_dataset": true,
+    "config_version": "2.0"
+  },
+  "agencies": [
+    {
+      "agency_id": "CASA-01",
+      "city": "Casablanca",
+      "name": "AutoDrive Maroc - Casablanca Gauthier",
+      "address": "15 Boulevard d'Anfa, Quartier Gauthier, Casablanca 20000",
+      "district": "Gauthier",
+      "phone": "+212 522-489-015",
+      "email": "casablanca@autodrivemaroc.ma",
+      "opening_hours": {
+        "monday_to_friday": "08:00-19:00",
+        "saturday": "08:00-19:00",
+        "sunday": "09:00-13:00",
+        "public_holidays": "Fermé"
+      },
+      "fleet_size": 75
+    },
+    {
+      "agency_id": "RAB-01",
+      "city": "Rabat",
+      "name": "AutoDrive Maroc - Rabat Agdal",
+      "address": "27 Avenue Ibn Sina, Agdal, Rabat 10000",
+      "district": "Agdal",
+      "phone": "+212 537-772-046",
+      "email": "rabat@autodrivemaroc.ma",
+      "opening_hours": {
+        "monday_to_friday": "08:00-19:00",
+        "saturday": "08:00-19:00",
+        "sunday": "09:00-13:00",
+        "public_holidays": "Fermé"
+      },
+      "fleet_size": 45
+    },
+    {
+      "agency_id": "MRK-01",
+      "city": "Marrakech",
+      "name": "AutoDrive Maroc - Marrakech Guéliz",
+      "address": "52 Avenue Mohammed V, Guéliz, Marrakech 40000",
+      "district": "Guéliz",
+      "phone": "+212 524-431-278",
+      "email": "marrakech@autodrivemaroc.ma",
+      "opening_hours": {
+        "monday_to_friday": "08:00-20:00",
+        "saturday": "08:00-20:00",
+        "sunday": "08:00-20:00",
+        "public_holidays": "08:00-13:00"
+      },
+      "fleet_size": 60
+    }
+  ],
+  "vehicle_categories": [
+    {
+      "code": "A",
+      "name": "Économique",
+      "description": "Citadines compactes, faible consommation, idéales pour la ville",
+      "example_models": ["Dacia Sandero", "Renault Clio", "Hyundai i10"],
+      "seats": 5,
+      "transmission_options": ["Manuelle"]
+    },
+    {
+      "code": "B",
+      "name": "Compacte",
+      "description": "Véhicules polyvalents pour trajets urbains et interurbains",
+      "example_models": ["Dacia Logan", "Renault Mégane", "Hyundai i20"],
+      "seats": 5,
+      "transmission_options": ["Manuelle", "Automatique"]
+    },
+    {
+      "code": "C",
+      "name": "Berline",
+      "description": "Berlines confortables pour déplacements professionnels et longue distance",
+      "example_models": ["Peugeot 301", "Hyundai Elantra", "Toyota Corolla"],
+      "seats": 5,
+      "transmission_options": ["Manuelle", "Automatique"]
+    },
+    {
+      "code": "D",
+      "name": "SUV",
+      "description": "Véhicules surélevés, adaptés aux routes de montagne et longs trajets",
+      "example_models": ["Dacia Duster", "Hyundai Tucson", "Toyota RAV4", "Peugeot 3008"],
+      "seats": 5,
+      "transmission_options": ["Automatique"]
+    },
+    {
+      "code": "E",
+      "name": "Monospace",
+      "description": "Véhicules familiaux ou de groupe à grande capacité",
+      "example_models": ["Dacia Lodgy", "Renault Grand Scénic", "Peugeot Rifter"],
+      "seats": 7,
+      "transmission_options": ["Manuelle", "Automatique"]
+    },
+    {
+      "code": "F",
+      "name": "Utilitaire",
+      "description": "Véhicules de transport de marchandises et déménagement",
+      "example_models": ["Renault Kangoo", "Peugeot Partner", "Dacia Dokker"],
+      "seats": 3,
+      "transmission_options": ["Manuelle"]
+    }
+  ],
+  "insurance_types": [
+    {
+      "code": "BASIC",
+      "name": "Basic",
+      "description": "Assurance responsabilité civile obligatoire, couverture minimale",
+      "deductible_min_mad": 8000,
+      "deductible_max_mad": 15000
+    },
+    {
+      "code": "CDW_STANDARD",
+      "name": "CDW Standard",
+      "description": "Rachat partiel de franchise en cas de dommages collision",
+      "deductible_min_mad": 3000,
+      "deductible_max_mad": 6000
+    },
+    {
+      "code": "CDW_PREMIUM",
+      "name": "CDW Premium",
+      "description": "Rachat étendu de franchise, couverture renforcée",
+      "deductible_min_mad": 1000,
+      "deductible_max_mad": 2500
+    },
+    {
+      "code": "THEFT_PROTECTION",
+      "name": "Theft Protection",
+      "description": "Protection contre le vol du véhicule loué",
+      "deductible_min_mad": 2000,
+      "deductible_max_mad": 4000
+    },
+    {
+      "code": "FULL_PROTECTION",
+      "name": "Full Protection",
+      "description": "Couverture tous risques, franchise ramenée au minimum",
+      "deductible_min_mad": 0,
+      "deductible_max_mad": 500
+    }
+  ],
+  "pricing_rules": [
+    {
+      "category_code": "A",
+      "daily_rate_mad": 220,
+      "weekly_rate_mad": 1320,
+      "monthly_rate_mad": 4200,
+      "deposit_mad": 3000
+    },
+    {
+      "category_code": "B",
+      "daily_rate_mad": 320,
+      "weekly_rate_mad": 1900,
+      "monthly_rate_mad": 6200,
+      "deposit_mad": 4000
+    },
+    {
+      "category_code": "C",
+      "daily_rate_mad": 420,
+      "weekly_rate_mad": 2500,
+      "monthly_rate_mad": 8200,
+      "deposit_mad": 5000
+    },
+    {
+      "category_code": "D",
+      "daily_rate_mad": 650,
+      "weekly_rate_mad": 3900,
+      "monthly_rate_mad": 13000,
+      "deposit_mad": 8000
+    },
+    {
+      "category_code": "E",
+      "daily_rate_mad": 580,
+      "weekly_rate_mad": 3500,
+      "monthly_rate_mad": 11500,
+      "deposit_mad": 7000
+    },
+    {
+      "category_code": "F",
+      "daily_rate_mad": 520,
+      "weekly_rate_mad": 3100,
+      "monthly_rate_mad": 10200,
+      "deposit_mad": 6500
+    }
+  ],
+  "plate_format": {
+    "pattern": "{numéro}-{lettre_arabe}-{code_région}",
+    "example": "12345-أ-6",
+    "description": "Plaque d'immatriculation marocaine standard : numéro de série (1 à 6 chiffres), lettre arabe indiquant la série d'immatriculation, puis code numérique de région (1 à 2 chiffres)."
+  },
+  "policies_summary": {
+    "minimum_driver_age": {
+      "categories_A_to_C": "21 ans minimum, permis de conduire valide depuis au moins 2 ans",
+      "categories_D_and_E": "23 ans minimum, permis de conduire valide depuis au moins 3 ans",
+      "category_F": "25 ans minimum, permis de conduire valide depuis au moins 3 ans"
+    },
+    "included_mileage": {
+      "daily_rental": "200 km/jour inclus, 2.5 MAD par km supplémentaire",
+      "weekly_rental": "1400 km/semaine inclus, 2 MAD par km supplémentaire",
+      "monthly_rental": "kilométrage illimité"
+    },
+    "late_return_penalty": "1 heure de tolérance ; au-delà, 10% du tarif journalier facturé par heure de retard ; au-delà de 3 heures, une journée supplémentaire complète est facturée",
+    "fuel_policy": "Véhicule remis réservoir plein, restitution réservoir plein exigée ; à défaut, carburant manquant facturé au tarif pompe majoré de 100 MAD de frais de service"
+  },
+  "date_range": {
+    "start_year": 2024,
+    "end_year": 2026,
+    "description": "Plage d'années couverte pour la génération des documents (contrats de location, factures, avenants, états des lieux)"
+  },
+
+  "document_id_formats": {
+    "description": "Format obligatoire des document_id, à respecter dans tous les batchs. Le numéro de séquence continue d'un batch au suivant pour un même agent, il ne redémarre jamais à 0001.",
+    "politiques_contrats": "PC-{sequence:04d}  (ex: PC-0001, PC-0002, ... PC-0120)",
+    "faq": "FAQ-{sequence:04d}  (ex: FAQ-0001, FAQ-0002, ...)",
+    "assurances": "ASS-{sequence:04d}  (ex: ASS-0001, ASS-0002, ...)",
+    "vehicules": "VEH-{sequence:04d}  (ex: VEH-0001, VEH-0002, ...)",
+    "maintenance": "MNT-{sequence:04d}  (ex: MNT-0001, MNT-0002, ...)"
+  },
+
+  "insurance_exclusions_common": {
+    "description": "Exclusions applicables à TOUS les types d'assurance, vocabulaire contrôlé à réutiliser tel quel (snake_case) dans les documents Assurances.",
+    "values": [
+      "conduite_sous_alcool_ou_stupefiants",
+      "conducteur_non_declare_au_contrat",
+      "usage_hors_territoire_national_sans_autorisation_ecrite",
+      "participation_a_une_course_ou_competition",
+      "transport_de_marchandises_dangereuses_ou_illegales",
+      "usage_commercial_non_declare_type_vtc_taxi",
+      "delit_de_fuite_ou_infraction_grave_au_code_de_la_route",
+      "dommages_intentionnels",
+      "non_respect_des_conditions_entretien_contractuelles",
+      "surcharge_du_vehicule_au_dela_du_nombre_de_places_autorise"
+    ]
+  },
+  "insurance_type_specifics": {
+    "description": "Couvertures et exclusions additionnelles propres à chaque type d'assurance, en plus des exclusions communes ci-dessus. À respecter strictement pour éviter les contradictions entre documents du même type.",
+    "BASIC": {
+      "covers": ["dommages_corporels_tiers", "dommages_materiels_tiers"],
+      "excludes_additionally": ["dommages_au_vehicule_loue_lui_meme", "vol_du_vehicule", "bris_de_glace"]
+    },
+    "CDW_STANDARD": {
+      "covers": ["dommages_collision_partiel_vehicule_loue"],
+      "excludes_additionally": ["vol_du_vehicule", "bris_de_glace_non_declare_a_la_prise_en_charge"]
+    },
+    "CDW_PREMIUM": {
+      "covers": ["dommages_collision_etendu_vehicule_loue", "bris_de_glace"],
+      "excludes_additionally": ["vol_du_vehicule"]
+    },
+    "THEFT_PROTECTION": {
+      "covers": ["vol_avec_effraction_averee", "vol_avec_cles_du_vehicule"],
+      "excludes_additionally": ["vol_sans_preuve_effraction_si_cles_laissees_visibles_ou_a_bord"]
+    },
+    "FULL_PROTECTION": {
+      "covers": ["tous_dommages_collision", "vol", "bris_de_glace", "assistance_0_km"],
+      "excludes_additionally": ["negligence_grave_averee_du_conducteur"]
+    }
+  },
+
+  "maintenance_reference": {
+    "description": "Seuils de référence par catégorie de véhicule, à utiliser tels quels dans tous les documents Maintenance pour rester cohérent entre batchs.",
+    "A": { "vidange_km": 10000, "pneus_km": 40000, "batterie_mois": 36, "freinage_km": 20000, "climatisation_mois": 12 },
+    "B": { "vidange_km": 10000, "pneus_km": 40000, "batterie_mois": 36, "freinage_km": 20000, "climatisation_mois": 12 },
+    "C": { "vidange_km": 12000, "pneus_km": 45000, "batterie_mois": 36, "freinage_km": 25000, "climatisation_mois": 12 },
+    "D": { "vidange_km": 12000, "pneus_km": 50000, "batterie_mois": 30, "freinage_km": 25000, "climatisation_mois": 12 },
+    "E": { "vidange_km": 12000, "pneus_km": 45000, "batterie_mois": 30, "freinage_km": 25000, "climatisation_mois": 12 },
+    "F": { "vidange_km": 15000, "pneus_km": 40000, "batterie_mois": 24, "freinage_km": 20000, "climatisation_mois": 12 }
+  },
+  "maintenance_inspection_checkpoints": {
+    "avant_location": [
+      "niveau_carburant", "proprete_interieure_et_exterieure", "etat_et_pression_pneus",
+      "niveaux_huile_et_liquides", "fonctionnement_eclairage", "presence_documents_bord",
+      "etat_carrosserie_rayures_chocs"
+    ],
+    "retour_location": [
+      "kilometrage_parcouru", "niveau_carburant", "etat_general_carrosserie",
+      "proprete_interieure", "controle_equipements_gps_etc", "verification_absence_dommages_non_declares"
+    ]
+  },
+
+  "client_profiles": [
+    {
+      "type": "particulier_marocain",
+      "documents_requis": "CIN + permis de conduire marocain",
+      "age_typique": "21-65 ans",
+      "duree_location_moyenne_jours": "1-7"
+    },
+    {
+      "type": "entreprise_marocaine",
+      "documents_requis": "RC/ICE de la société + CIN et permis de conduire du conducteur désigné",
+      "duree_location_moyenne_jours": "7-90",
+      "mode_contrat": "contrat cadre annuel ou location ponctuelle facturée à l'entreprise"
+    },
+    {
+      "type": "touriste_etranger",
+      "documents_requis": "passeport + permis de conduire international ou permis national selon accord bilatéral",
+      "duree_location_moyenne_jours": "3-14",
+      "particularites": "caution généralement majorée de 20 à 30%, assurance Full Protection fortement recommandée"
+    }
+  ],
+
+  "scenario_tags_vocabulary": {
+    "description": "Liste fermée de tags autorisés pour le champ scenario_tags. Toujours en français, en snake_case, ne jamais inventer de nouveaux tags hors de cette liste.",
+    "values": [
+      "reservation", "annulation", "paiement", "caution", "retard_restitution",
+      "carburant", "kilometrage", "conducteur_additionnel", "contrat_entreprise",
+      "contrat_particulier", "contrat_touriste", "avenant", "franchise", "sinistre",
+      "vol", "accident", "conducteur_non_autorise", "exclusion_garantie", "panne",
+      "entretien_preventif", "urgence", "longue_duree", "client_etranger",
+      "litige", "remboursement"
+    ]
+  }
+}

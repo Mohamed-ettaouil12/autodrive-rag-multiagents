@@ -1,0 +1,23 @@
+{
+  "tokenizer": "approximation par mots (tiktoken indisponible)",
+  "documents_source": 202,
+  "chunks_total": 2828,
+  "par_type": {
+    "entities": {
+      "chunks": 202,
+      "tokens_moyen": 115.2,
+      "tokens_total": 23270
+    },
+    "section": {
+      "chunks": 1414,
+      "tokens_moyen": 37.4,
+      "tokens_total": 52854
+    },
+    "faq": {
+      "chunks": 1212,
+      "tokens_moyen": 18.1,
+      "tokens_total": 21925
+    }
+  },
+  "fichier_sortie": "output/chunks_contrats.jsonl"
+}
